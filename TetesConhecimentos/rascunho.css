@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Sharp:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+:root{
+    /*CONFIG CORES*/
+    --prin-cor:#1CBBFF;
+    --sec-cor:#FFBA2E;
+    --terc-cor:#FF7223;
+    --prox-prin-cor:#497080;
+    --prox-terc-cor:#806E49;
+    --borda: 1px solid black;
+
+    /*CONFIG ALTURAS*/
+    --hea-alt:150px;
+    --main-alt:500px;
+    --foot-alt:100px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+p{
+    text-align: center;
+}
+
+p#aviso{
+    font-size: 20px;
+    color:black;
+}
+
+p#lorem{
+    color: rgb(99, 99, 99);
+}
+
+body{
+    background-color:rgb(255, 70, 212);
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, sans-serif;
+    background-color: #0a466077;
+    background-image: linear-gradient(#1CBBFF77, #0a3b509a),
+    url(../Imagens/Solar_Fundo_1920_25dpi.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+header{
+    width:100%;
+    height:var(--hea-alt);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div#box_barraCongelada{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height:75%;
+    width: 90%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+}
+div#img_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: var(--borda);/*ESTRUTURA TEMPRÁRIA*/
+    height: 50%;
+    width: 25%;
+    text-align: center;
+}
+
+div#contorno_nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+
+nav#nav_prin > a{
+    text-decoration: none;
+    color: #041922;
+    font-family: "Asap Sharp", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px;
+}
+
+nav#nav_prin >a:hover{
+    border-bottom: 3px solid var(--sec-cor);
+    transition: .25s;
+}
+
+main{
+    width:100%;
+    height:max-content;
+}
+
+section{
+    background-color:white;
+    display: flex;/*ESTRUTURA TEMPRÁRIA*/
+    flex-direction: column;
+    height:600px;/*ESTRUTURA TEMPRÁRIA*/
+    justify-content: center;/*ESTRUTURA TEMPRÁRIA*/
+    align-items: center;/*ESTRUTURA TEMPRÁRIA*/
+    margin: auto;
+}
+
+section#sec_intro{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+div#box_servicos > div{
+    width:50px;
+    height:50px;
+    border:var(--borda);
+    margin:auto;
+}
+
+div#box_servicos > div:hover{
+    background-color:var(--terc-cor);
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.382);
+
+}
+
+div#box_servicos{
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    height:80%;
+    border:var(--borda);
+}
+
+div#box_apps{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    height:75%;
+    border: var(--borda);
+}
+
+div#app_OrcSolar{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 80%;
+    border: var(--borda);
+    margin: auto;
+    text-align: center;
+}
+
+div#app_HorPonta{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 80%;
+    border: var(--borda);
+    margin: auto;
+    text-align: center;
+}
+
+footer{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:var(--foot-alt);
+}
+
